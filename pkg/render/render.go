@@ -58,10 +58,10 @@ func RenderTemplate(w http.ResponseWriter, tmpl string, td *models.TemplateData)
 	}
 
 	//render the template
-	_,err = buf.WriteTo(w)
-	if err != nil {
-		log.Println(err)
-    }
+	// _,err = buf.WriteTo(w)
+	// if err != nil {
+	// 	log.Println(err)
+    // }
 
 	// parseTemplate, _ := template.ParseFiles("./template/" + tmpl, "./template/base.template.html")
 	// err := parseTemplate.Execute(w, nil)

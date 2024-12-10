@@ -1,21 +1,17 @@
 {
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "label": "Run Go Files",
-        "type": "shell",
-        "command": "go",
-        "args": [
-          "run",
-          "."
-        ],
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": [],
-        "detail": "Task to run all Go files in the current directory"
-      }
-    ]
-  }
-  
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Go Files",
+      "type": "shell",
+      "command": "go",
+      "args": ["run", "cmd/web/*.go"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "detail": "Run all Go files in cmd/web directory"
+    }
+  ]
+}
